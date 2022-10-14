@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.location.GnssAntennaInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -23,15 +24,20 @@ public class MainActivity extends AppCompatActivity {
 
             super.onCreate(savedInstanceState);
 
+            Log.i("CV","OnCreate()");
+            setContentView(R.layout.activity_main);
+
+
             ViewGroup vg = new LinearLayout(this);
 
-            this.x=0;
+
             this.tv =new TextView(this);
             tv.setText("MENSAJE");
             this.b =new Button(this);
             b.setText("PULSA");
             this.b2=new Button(this);
             b2.setText("RESET");
+            this.x=0;
 
             b.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -56,23 +62,19 @@ public class MainActivity extends AppCompatActivity {
             //ACCIONES DE MENSAJES EN EL LOGCAT
         //Log.d("NIA", "Mi  primer mensaje de Logat");
         //setContentView(R.layout.activity_main);
-
-
     }
 
-
     private void accionPulsado() {
-     //   tv.setText("PULSADO");
-
+        b.setText("PULSADO");
+        this.x++;
+        tv.setText("Pulsado " + this.x + " veces");
         //añadir contador
 
-           this.x++;
-
-           if (this.x==6){
+           if (this.x==5){
                this.b.setEnabled(false);
                //deshabilita el boton al llegar a 5
            }
-        tv.setText(this.mensaje);
+
         }
 
     private void accionReset() {
@@ -80,8 +82,33 @@ public class MainActivity extends AppCompatActivity {
         if(boton==false){
             this.b.setEnabled(true);
             this.x=0;
-            tv.setText(this.mensaje);
+            tv.setText("Pulsado " + this.x + " veces");
         }
+    }
+
+
+
+
+     protected void onStarted(){
+        super.onStar();
+        Log.i("CV", "onStar");
+    }
+    protected void onResumed(){
+        super.onStar();
+        Log.i("CV", "onPause");
+    }
+    protected void onPause(){
+        super.onPause();
+        Log.i("CV", "onPause");
+     }
+    protected void onRestart(){
+        super.onCreate();
+        Log.i("CV", "onCreate");
+    }
+
+    protected void onDesrtoy(){
+        super.onCreate();
+        Log.i("CV", "OnDestroy");
     }
 
     }
