@@ -26,11 +26,13 @@ public class MainActivity extends AppCompatActivity {
                                  }
                              }
         );*/
-        b.setOnClickListener(v ->accion(v)); //es lo mismo que lo de arriba pero usando el metodo lambda
+        //b.setOnClickListener(v ->accion(v)); //es lo mismo que lo de arriba pero usando el metodo lambda
+        b.setOnClickListener(v ->accion());
     }
-
-    private void accion(View view){
-        Button boton = (Button) view;
+    //private void accion(View view)
+    private void accion(){
+        //Button boton = (Button) view;
+        Button boton = (Button) (findViewById(R.id.idBoton));
         boton.setText("PULSADO");
     }
 }
