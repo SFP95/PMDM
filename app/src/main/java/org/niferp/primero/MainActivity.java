@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                                  }
                              }
         );*/
+        b.setOnClickListener(v ->accion(v)); //es lo mismo que lo de arriba pero usando el metodo lambda
     }
 
     private void accion(View view){
