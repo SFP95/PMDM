@@ -4,7 +4,7 @@
     android:id  =  "@+id/idBoton"
     android:layout_width = "fill_parent"
     android:layout_height = "match_parent"
-    android:text = "@string/pepito"
+    android:text = "@string/btnej4"
     android:textSize="30dp"
     android:onClick="accion"
     />
