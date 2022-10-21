@@ -9,7 +9,7 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-
+    android.content.res.Resources res = getResources();
     Resources resources =getResources();
     int veces = 1;
     @Override
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button  b=(Button) findViewById(R.id.idBoton);
 
 
-        b.setOnClickListener(v ->accion());
+      //  b.setOnClickListener(v ->accion());
     }
 
     private void accion(){
