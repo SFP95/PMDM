@@ -1,6 +1,8 @@
 package org.niferp.primero;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,7 +10,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    Resources resources =getResources();
+    int veces = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -21,7 +24,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void accion(){
+
+        res.getQuantityString(
+                R.plurals.numPulsaciones,     // ruta al recurso
+                veces,                // selector de caso (singular, plural)
+                veces                // número a sustituir por el %d
+        );
+
+
+
         Button boton = (Button) (findViewById(R.id.idBoton));
-        boton.setText("PULSADO $N VEZ");
+        boton.setText("PULSADO %n VEZ");
     }
 }
