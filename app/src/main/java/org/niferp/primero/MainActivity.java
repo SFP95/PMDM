@@ -19,16 +19,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button  b=(Button) findViewById(R.id.idBoton);
 
-
-      //  b.setOnClickListener(v ->accion());
+        b.setOnClickListener(v ->accion());
     }
 
     private void accion(){
 
         res.getQuantityString(
-                R.plurals.numPulsaciones,     // ruta al recurso
-                veces,                // selector de caso (singular, plural)
-                veces                // número a sustituir por el %d
+                R.plurals.numPulsaciones,
+                veces,
+                veces
         );
 
 
