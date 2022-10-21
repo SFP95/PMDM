@@ -28,7 +28,7 @@ public class MainActiviti2 extends AppCompatActivity {
 
 
 
-            /*
+
             Log.i("CV","OnCreate()");
 
 
@@ -88,7 +88,7 @@ public class MainActiviti2 extends AppCompatActivity {
             this.x=0;
             tv.setText("Pulsado " + this.x + " veces");
         }
-    }*/
+    }
 
 
 
@@ -117,4 +117,3 @@ public class MainActiviti2 extends AppCompatActivity {
 
     }
 
-}
