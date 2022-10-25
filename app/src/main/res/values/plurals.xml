@@ -4,8 +4,8 @@
         <item quantity="one">Pulsado %d vez</item>
         <item quantity="other">Pulsado %d veces</item>
     </plurals>
-    <plurals name="numPulsaciones" tools:ignore="DuplicateDefinition">
+   <!-- <plurals name="numPulsaciones" tools:ignore="DuplicateDefinition">
         <item quantity="one">Touched %d time</item>
         <item quantity="other">Touched %d times</item>
-    </plurals>
+    </plurals -->
 </resources>

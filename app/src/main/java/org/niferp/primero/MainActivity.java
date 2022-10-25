@@ -9,30 +9,26 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-    android.content.res.Resources res = getResources();
-    Resources resources =getResources();
-    int veces = 1;
+
+    private int n;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.n=0;
         Button  b=(Button) findViewById(R.id.idBoton);
+        b.setOnClickListener(v ->accion(v));
 
-        b.setOnClickListener(v ->accion());
     }
 
-    private void accion(){
-
-        res.getQuantityString(
-                R.plurals.numPulsaciones,
-                veces,
-                veces
-        );
-
-
-
-        Button boton = (Button) (findViewById(R.id.idBoton));
-        boton.setText("PULSADO %n VEZ");
+    private void accion(View v){
+        Button boton = (Button) v;
+        this.n++;
+        if (this.n==1){
+            boton.setText("PULSADO "+this.n+" VEZ");
+        }else {
+            boton.setText("PULSADO "+this.n+" VECES");
+        }
     }
 }

@@ -6,7 +6,6 @@
     android:layout_height = "match_parent"
     android:text = "@string/pepito"
     android:textSize="30dp"
-    android:onClick="accion"
     />
 
 <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
