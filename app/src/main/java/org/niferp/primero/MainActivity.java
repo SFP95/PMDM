@@ -25,14 +25,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void configurarListeners() {
         RadioGroup rg =  findViewById(R.id.rg);
-        rg.setOnCheckedChangeListener(
-                new RadioGroup.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(RadioGroup radioGroup, int idRB) {
-                        accionCambioRG(idRB);
-                    }
-                }
-        );
+        //con un lambda
+        rg.setOnCheckedChangeListener((radioGroup,id) -> accionCambioRG(id));
+        /**
+         * new RadioGroup.OnCheckedChangeListener() {
+         *                     @Override
+         *                     public void onCheckedChanged(RadioGroup radioGroup, int idRB) {
+         *                         accionCambioRG(idRB);
+         *                     }
+         *                 }
+         */
     }
     private  void accionCambioRG( int id){
         String mensaje="";
