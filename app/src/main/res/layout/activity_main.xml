@@ -3,6 +3,7 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,100 +11,124 @@
     tools:context=".MainActivity"
     >
 
-    <RadioGroup
-        android:id="@+id/rg"
-        android:layout_width="265dp"
-        android:layout_height="259dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="334dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/rb1"
+        <TextView
+            android:id="@+id/solido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UNO" />
+            android:text="Escoge una opción"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
 
-        <RadioButton
-            android:id="@+id/rb2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="DOS" />
-
-        <RadioButton
-            android:id="@+id/rb3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TRES" />
-
-        <RadioButton
-            android:id="@+id/rb4"
+        <RadioGroup
+            android:id="@+id/rg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CUATRO" />
-    </RadioGroup>
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/solido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Escoge una opción"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="79dp" />
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNO" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOS" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRES" />
+
+            <RadioButton
+                android:id="@+id/rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUATRO" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brocolo (100kl)" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamburguesa (1500 cal)" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Torreznos (2000 cal)" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jamón York (500 cal)" />
+        </RadioGroup>
+    </LinearLayout>
 
 
-
-
-<!--
-<Button
-    xmlns:android = "http://schemas.android.com/apk/res/android"
-    android:id  =  "@+id/idBoton"
-    android:layout_width = "fill_parent"
-    android:layout_height = "match_parent"
-    android:text = "@string/pepito"
-    android:textSize="30dp"
-    />
-
-<LinearLayout
-    xmlns:android = "http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="fill_parent"
-    android:layout_width="fill_parent"
-    android:background="#666666"
-    android:orientation="vertical"
-    tools:ignore="HardcodeText"
-    android:gravity="right"
-    >
-
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/greet"
-        android:textSize="100dp"
-        android:textColor="@color/design_default_color_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <!--
     <Button
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        android:id  =  "@+id/boton"
+        android:id  =  "@+id/idBoton"
         android:layout_width = "fill_parent"
-        android:layout_height = "fill_parent"
-        android:text = "PULSA"
-        tools:ignore = "MissingConstraints"
-        />-->
+        android:layout_height = "match_parent"
+        android:text = "@string/pepito"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="#666666"
+        android:orientation="vertical"
+        tools:ignore="HardcodeText"
+        android:gravity="right"
+        >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/greet"
+            android:textSize="100dp"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            xmlns:android = "http://schemas.android.com/apk/res/android"
+            android:id  =  "@+id/boton"
+            android:layout_width = "fill_parent"
+            android:layout_height = "fill_parent"
+            android:text = "PULSA"
+            tools:ignore = "MissingConstraints"
+            />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
