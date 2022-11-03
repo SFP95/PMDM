@@ -12,27 +12,27 @@
 
     <RadioGroup
         android:id="@+id/rg"
-        android:layout_width="280dp"
-        android:layout_height="358dp"
+        android:layout_width="265dp"
+        android:layout_height="259dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="235dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="334dp">
 
         <RadioButton
             android:id="@+id/rb1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="UNO" />
 
         <RadioButton
             android:id="@+id/rb2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DOS" />
 
         <RadioButton
             android:id="@+id/rb3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TRES" />
 
@@ -45,8 +45,8 @@
 
     <TextView
         android:id="@+id/solido"
-        android:layout_width="375dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Escoge una opción"
         android:textSize="30sp"
         android:textStyle="bold"

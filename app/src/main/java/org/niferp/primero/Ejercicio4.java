@@ -6,7 +6,7 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
+/*
 public class Ejercicio4 extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
@@ -20,4 +20,4 @@ public class Ejercicio4 extends AppCompatActivity {
         Button b=(Button) findViewById(R.id.idBoton);
         b.setText("DOS");
     }
-}
+}*/
