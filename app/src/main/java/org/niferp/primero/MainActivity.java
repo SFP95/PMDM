@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
         String mensaje="";
         switch (id){
             case R.id.rb1:mensaje="eres un tuno" ;break;
-            case R.id.rv2: mensaje= "vaya tos";break;
+            case R.id.rb2: mensaje= "vaya tos";break;
             case R.id.rb3: mensaje ="del derechos o del reves" ;break;
             case R.id.rb4: mensaje=" la cara de tu retrato";break;
 
         }
-        TextView tv=findViewById(R.id.salida);
+        TextView tv=findViewById(R.id.solido);
         tv.setText(mensaje);
     }
 }

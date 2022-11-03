@@ -10,6 +10,52 @@
     tools:context=".MainActivity"
     >
 
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="280dp"
+        android:layout_height="358dp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="235dp"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNO" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOS" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRES" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CUATRO" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/solido"
+        android:layout_width="375dp"
+        android:layout_height="59dp"
+        android:text="Escoge una opción"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+
+
 
 <!--
 <Button
@@ -58,47 +104,6 @@
         android:layout_height = "fill_parent"
         android:text = "PULSA"
         tools:ignore = "MissingConstraints"
-        />
+        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
--->
-    <RadioGroup
-        android:id="@+id/rg"
-        android:layout_width="280dp"
-        android:layout_height="358dp"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="235dp">
-
-        <RadioButton
-            android:id="@+id/rb1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="UNO" />
-
-        <RadioButton
-            android:id="@+id/rv2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DOS" />
-
-        <RadioButton
-            android:id="@+id/rb3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TRES" />
-
-        <RadioButton
-            android:id="@+id/rb4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CUATRO" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="239dp"
-        android:layout_height="78dp"
-        android:text="Escoge una opción"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="15dp" />
-
