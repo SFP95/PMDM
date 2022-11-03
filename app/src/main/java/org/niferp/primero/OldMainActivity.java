@@ -36,3 +36,31 @@ public class OldMainActivity extends AppCompatActivity {
         boton.setText("PULSADO");
     }
 }
+/**
+ *
+ *  RadioGroup g=new RadioGroup(this);
+ *          g.setOnCheckedChangeListener(
+ *                  new RadioGroup.OnCheckedChangeListener(){
+ *                      @Override
+ *                      public void onCheckedChanged(RadioGroup radioGroup, int i) {
+ *
+ *                      }
+ *                  }
+ *          );
+ *
+ *  this.n=0;
+ *         Button  b=(Button) findViewById(R.id.idBoton);
+ *         b.setOnClickListener(v ->accion(v));
+ *
+ *     }
+ *
+ *     private void accion(View v){
+ *         Button boton = (Button) v;
+ *         this.n++;
+ *         if (this.n==1){
+ *             boton.setText("PULSADO "+this.n+" VEZ");
+ *         }else {
+ *             boton.setText("PULSADO "+this.n+" VECES");
+ *         }
+ *     }
+ */

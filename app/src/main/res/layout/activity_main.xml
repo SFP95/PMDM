@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddddaa"
+    tools:context=".MainActivity"
+    >
 
+
+<!--
 <Button
     xmlns:android = "http://schemas.android.com/apk/res/android"
     android:id  =  "@+id/idBoton"
@@ -10,8 +20,6 @@
     android:text = "@string/pepito"
     android:textSize="30dp"
     />
-
-<!--
 
 <LinearLayout
     xmlns:android = "http://schemas.android.com/apk/res/android"
@@ -54,3 +62,43 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 -->
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="280dp"
+        android:layout_height="358dp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="235dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNO" />
+
+        <RadioButton
+            android:id="@+id/rv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOS" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRES" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CUATRO" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="239dp"
+        android:layout_height="78dp"
+        android:text="Escoge una opción"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="15dp" />
+
