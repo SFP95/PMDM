@@ -27,6 +27,8 @@
                 android:id="@+id/rb1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:saveEnabled="true"
+                android:selectAllOnFocus="false"
                 android:text="Light (<1000 cal)" />
 
             <RadioButton
@@ -69,13 +71,14 @@
 
         <TextView
             android:id="@+id/solido"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
+            android:gravity="center"
             android:text="OK . 0 cal está dentro del rango LIGHT"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:visibility="visible"
             tools:ignore="MissingConstraints" />
 
     </LinearLayout>
