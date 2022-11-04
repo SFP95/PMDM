@@ -16,69 +16,68 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/solido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Escoge una opción"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints" />
-
         <RadioGroup
             android:id="@+id/rg"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
             tools:ignore="MissingConstraints">
 
             <RadioButton
                 android:id="@+id/rb1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="UNO" />
+                android:text="Light (<1000 cal)" />
 
             <RadioButton
                 android:id="@+id/rb2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DOS" />
+                android:text="Normal(1000-2000 cal)" />
 
             <RadioButton
                 android:id="@+id/rb3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TRES" />
+                android:text="Graso (>2000 cal)" />
 
-            <RadioButton
-                android:id="@+id/rb4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CUATRO" />
-
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Brocolo (100kl)" />
-
-            <CheckBox
-                android:id="@+id/checkBox4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hamburguesa (1500 cal)" />
-
-            <CheckBox
-                android:id="@+id/checkBox5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Torreznos (2000 cal)" />
-
-            <CheckBox
-                android:id="@+id/checkBox3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jamón York (500 cal)" />
         </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brocolo (100kl)" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jamón York (500 cal)" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hamburguesa (1500 cal)" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Torreznos (2000 cal)" />
+
+        <TextView
+            android:id="@+id/solido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="OK . 0 cal está dentro del rango LIGHT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
     </LinearLayout>
 
 
