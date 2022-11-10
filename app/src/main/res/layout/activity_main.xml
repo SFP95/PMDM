@@ -6,82 +6,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ddddaa"
+    android:background="#D8AADD"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RadioGroup
-            android:id="@+id/rg"
+        <RadioButton
+            android:id="@+id/rbLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            tools:ignore="MissingConstraints">
+            android:text="Light (<1000 cal)"
+            android:textSize="20sp" />
 
-            <RadioButton
-                android:id="@+id/rb1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:saveEnabled="true"
-                android:selectAllOnFocus="false"
-                android:text="Light (menos de 1000 cal)" />
-
-            <RadioButton
-                android:id="@+id/rb2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Normal(1000 y 2000 cal)" />
-
-            <RadioButton
-                android:id="@+id/rb3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Graso ( mas de 2000 cal)" />
-
-        </RadioGroup>
-
-
-
-        <CheckBox
-            android:id="@+id/checkBox"
+        <RadioButton
+            android:id="@+id/rbNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Brocolo (100 kl)" />
+            android:text="Normal (1000-2000 cal)"
+            android:textSize="20sp" />
 
-        <CheckBox
-            android:id="@+id/checkBox3"
+        <RadioButton
+            android:id="@+id/rbGraso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jamón York (500 cal)" />
+            android:text="Graso (>2000 cal)"
+            android:textSize="20sp" />
+    </RadioGroup>
 
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hamburguesa (1500 cal)" />
 
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Torreznos (2000 cal)" />
+    <CheckBox
+        android:id="@+id/ckBrocoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Brócoli (100 cal)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
-        <TextView
-            android:id="@+id/solido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="OK . 0 cal está dentro del rango LIGHT"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:visibility="visible"
-            tools:ignore="MissingConstraints" />
+    <CheckBox
+        android:id="@+id/ckJamonYork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Jamón York (500 cal)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckBrocoli" />
 
-    </LinearLayout>
+    <CheckBox
+        android:id="@+id/ckHamburguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hamburguesa (1000 cal)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckJamonYork" />
+
+
+    <CheckBox
+        android:id="@+id/ckTorreznos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Torreznos (2000 cal)"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckHamburguesa" />
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENSAJES"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ckTorreznos" />
 
 
     <!--
