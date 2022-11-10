@@ -95,13 +95,14 @@
         android:id="@+id/banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MENSAJES"
+        android:text="MENSAJE"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ckTorreznos" />
+        app:layout_constraintTop_toBottomOf="@+id/ckTorreznos"
+        app:layout_constraintVertical_bias="0.461" />
 
 
     <!--

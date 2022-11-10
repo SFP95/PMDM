@@ -69,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
        }
         String mensaje=(calorias >= min && calorias < max)? "OK" : "FATAL";
-        mensaje += "Te estás enchufando %1$d calorías";
+        mensaje += " - Te estás enchufando %1$d calorías";
         mensaje= String.format(mensaje, calorias);
 
-        this.banner.setText("mensaje");
+        this.banner.setText(mensaje);
     }
 }
