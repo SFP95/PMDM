@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         this.ckTorreznos.setOnCheckedChangeListener((cb,b)->actualizar());
     }
     private  void actualizar(){
+        int calorias=0;
+        calorias += ckBrocoli.isChecked()? 100:0;
         this.banner.setText("Actualizado");
     }
 }
