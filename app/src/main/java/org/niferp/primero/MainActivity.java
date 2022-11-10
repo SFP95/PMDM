@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         this.banner.setText(mensaje);
     }
-    private void tostada(String mensaje){
+    private void tostada(String mensaje){ //ventanita emergent que dura unos segundos
         Context context= getApplicationContext();
         int duracion= Toast.LENGTH_SHORT;
         Toast toast= Toast.makeText(context,mensaje,duracion);
