@@ -6,23 +6,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D8AADD"
+    android:background="#BE95C3"
     tools:context=".MainActivity">
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="339dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toTopOf="@+id/gBottom.TopButom.Chks"
+        app:layout_constraintEnd_toStartOf="@+id/gDer"
+        app:layout_constraintTop_toTopOf="@+id/gTopButom">
 
         <RadioButton
             android:id="@+id/rbLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#431E3D"
             android:text="Light (menos de 1000 cal)"
             android:textSize="20sp" />
 
@@ -30,6 +29,7 @@
             android:id="@+id/rbNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#431E3D"
             android:text="Normal (1000-2000 cal)"
             android:textSize="20sp" />
 
@@ -37,6 +37,7 @@
             android:id="@+id/rbGraso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#431E3D"
             android:text="Graso (mas de 2000 cal)"
             android:textSize="20sp" />
     </RadioGroup>
@@ -44,57 +45,63 @@
 
     <CheckBox
         android:id="@+id/ckBrocoli"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
+        android:buttonTint="#431E3D"
         android:text="Brócoli (100 cal)"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintEnd_toStartOf="@+id/gDer"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/gIzqButom"
+        app:layout_constraintTop_toTopOf="@+id/gBottom.TopButom.Chks" />
 
     <CheckBox
         android:id="@+id/ckJamonYork"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#431E3D"
         android:text="Jamón York (500 cal)"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gDer"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="@+id/gIzqButom"
         app:layout_constraintTop_toBottomOf="@+id/ckBrocoli" />
 
     <CheckBox
         android:id="@+id/ckHamburguesa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Hamburguesa (1000 cal)"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#431E3D"
+        android:text="Hamburguesa (1500 cal)"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gDer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gIzqButom"
         app:layout_constraintTop_toBottomOf="@+id/ckJamonYork" />
-
 
     <CheckBox
         android:id="@+id/ckTorreznos"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:buttonTint="#431E3D"
         android:text="Torreznos (2000 cal)"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ckHamburguesa" />
+        app:layout_constraintBottom_toTopOf="@+id/gBottomChks"
+        app:layout_constraintEnd_toStartOf="@+id/gDer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gIzqButom"
+        app:layout_constraintTop_toBottomOf="@+id/ckHamburguesa"
+        app:layout_constraintVertical_bias="0.355" />
 
     <TextView
         android:id="@+id/banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#66431E3D"
         android:text="MENSAJE"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,6 +110,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ckTorreznos"
         app:layout_constraintVertical_bias="0.461" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gIzqButom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gDer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gTopButom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gBottom.TopButom.Chks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="187dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gBottomChks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="517dp" />
 
 
     <!--
