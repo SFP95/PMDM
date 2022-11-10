@@ -2,6 +2,7 @@ package org.niferp.primero;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -73,5 +75,11 @@ public class MainActivity extends AppCompatActivity {
         mensaje= String.format(mensaje, calorias);
 
         this.banner.setText(mensaje);
+    }
+    private void tostada(String mensaje){
+        Context context= getApplicationContext();
+        int duracion= Toast.LENGTH_SHORT;
+        Toast toast= Toast.makeText(context,mensaje,duracion);
+        toast.show();
     }
 }
