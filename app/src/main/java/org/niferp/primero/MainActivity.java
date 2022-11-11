@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -27,10 +28,15 @@ public class MainActivity extends AppCompatActivity {
     }
     public void pulsar(View view){
         //Forma de arrancar la ventana seucndaria 5.0
-        startActivity(new Intent (this,SecundaryActivity.class));
-        Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
+        //startActivity(new Intent (this,SecundaryActivity.class));
+        //Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
 
         //5.1
+        EditText et=findViewById(R.id.idNombre);
+        String nombre=et.getText().toString();
+        Intent 1 = new Intent (this,SecundaryActivity.class);
+        1.putExtra(nombre);
+        startActivity(1);
 
     }
 
