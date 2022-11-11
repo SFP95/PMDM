@@ -2,18 +2,12 @@ package org.niferp.primero;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
+
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         //5.1
         EditText et=findViewById(R.id.idNombre);
         String nombre=et.getText().toString();
-        Intent 1 = new Intent (this,SecundaryActivity.class);
-        1.putExtra(nombre);
-        startActivity(1);
+        Intent i = new Intent (this,SecundaryActivity.class);
+        i.putExtra("nombre" ,nombre);
+        startActivity(i);
 
     }
 
