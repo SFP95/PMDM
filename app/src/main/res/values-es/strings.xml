@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Escoge una opción</string>
+    <!--<string name="app_name">Escoge una opción</string>-->
     <string name="greet">Hola AMIGOS</string>
     <string name="pepito">Pulsa </string>
     <string name="btnej4">UNO</string>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Primero</string>
+    <string name="app_name" translatable="false">App PMDM</string>
     <string name="greet">Hola AMIGOS</string>
     <string name="pepito">Pulsa </string>
     <string name="btnej4">UNO</string>
