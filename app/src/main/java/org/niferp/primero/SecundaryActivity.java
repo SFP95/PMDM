@@ -3,14 +3,24 @@ package org.niferp.primero;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class SecundaryActivity extends AppCompatActivity{
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+   protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        String nombre= getIntent().getStringExtra("nombre");
+        TextView tv = (TextView) findViewById(R.id.textoEscoge);
+        tv.setText("Hola "+ nombre);
     }
-    //5.2 Esta en el activity_main2
+    //5.2 La vista esta en el activity_main2
+
+
 }

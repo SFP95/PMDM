@@ -31,7 +31,12 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent (this,SecundaryActivity.class);
         i.putExtra("nombre" ,nombre);
         startActivity(i);
-
+/**
+ * String nombre=getIntent().getStringExtra("nombre");
+ *         //Toast.makeText(this,"Hola"+nombre,Toast.LENGTH_LONG);
+ *         EditText tv = (EditText) findViewById( R.id.textoEscoge);
+ *         tv.setText("Hola" + nombre);
+ */
     }
 
 }
