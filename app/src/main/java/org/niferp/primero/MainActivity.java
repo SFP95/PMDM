@@ -1,5 +1,6 @@
 package org.niferp.primero;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -7,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import org.niferp.primero.domain.Persona;
 
@@ -42,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         int edad=(int)((Math.random()*50)+1);
         System.out.println(edad);
         Persona persona=new Persona(nombre,edad);
-        i.putExtra("persona",persona);
+       // i.putExtra("persona",persona);
+
         //startActivity(i); Si queremos abrir la 2ª ventana sin esperar resultados
 
 /**
@@ -53,8 +56,13 @@ public class MainActivity extends AppCompatActivity {
  */
 
         // RECIBIR DATOS DE LA PANTALA SECUNDARIA
-        startActivityForResult(i,1); //para abir la ventaba ESPARANDO LAS RESPUESTADESDE LAS SECUNDARIA
 
+        i.putExtra("mensaje",((TextView)(findViewById( R.id.textoEscoge))).getText().toString());
+
+        startActivityForResult(i,1); //para abir la ventaba ESPARANDO LAS RESPUESTADESDE LAS SECUNDARIA
+        protected void onActivityResult(int requestCode , int resultCode, @Nullable Intent dara){
+            super.onActivityResult(requestCode,resultCode,data);
+        }
     }
 
 }
