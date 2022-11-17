@@ -24,11 +24,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void pulsar(View view){
-        /**
-         * Forma de arrancar la ventana seucndaria 5.0
-        *startActivity(new Intent (this,SecundaryActivity.class));
-        *Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
-        */
+
+//COMENTAR DE GOLPE ALGO: select + contrl + /
+
+/**
+* Forma de arrancar la ventana seucndaria 5.0
+* startActivity(new Intent (this,SecundaryActivity.class));
+* Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
+*/
 
         //5.1
         Intent i = new Intent (this,SecundaryActivity.class);
@@ -47,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
  *         EditText tv = (EditText) findViewById( R.id.textoEscoge);
  *         tv.setText("Hola" + nombre);
  */
+
+        // RECIBIR DATOS DE LA PANTALA SECUNDARIA
+
+
     }
 
 }
