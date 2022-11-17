@@ -33,45 +33,42 @@
             android:id="@+id/rb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:layout_marginTop="0dp"
-            android:layout_weight="5d"
             android:marqueeRepeatLimit="15"
+            android:minHeight="48dp"
             android:text="2001: La odisea del espacio"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:layout_marginTop="0dp"
-            android:layout_weight="5d"
             android:marqueeRepeatLimit="15"
             android:text="El Señor de los Anillos"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:layout_marginTop="0dp"
-            android:layout_weight="5d"
             android:marqueeRepeatLimit="15"
             android:text="La lista de Schindler"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/rb4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:layout_marginTop="0dp"
-            android:layout_weight="5d"
             android:marqueeRepeatLimit="15"
             android:text="Forrest Gump"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </RadioGroup>
 

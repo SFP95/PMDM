@@ -26,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
 
         //5.1
-        EditText et=findViewById(R.id.idNombre);
-        String nombre=et.getText().toString();
         Intent i = new Intent (this,SecundaryActivity.class);
+        EditText et=findViewById(R.id.idNombre);
+        String nombre=et.getText().toString().equals("")? et.getText().toString():"JOHN DOE";
         i.putExtra("nombre" ,nombre);
+        int dato=18;
+        i.putExtra("edad",dato);
         startActivity(i);
 /**
  * String nombre=getIntent().getStringExtra("nombre");
