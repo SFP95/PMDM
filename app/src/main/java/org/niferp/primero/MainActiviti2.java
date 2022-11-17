@@ -28,7 +28,6 @@ public class MainActiviti2 extends AppCompatActivity {
 
 
 
-
             Log.i("CV","OnCreate()");
 
 

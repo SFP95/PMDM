@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(edad);
         Persona persona=new Persona(nombre,edad);
         i.putExtra("persona",persona);
-        startActivity(i);
+        //startActivity(i); Si queremos abrir la 2ª ventana sin esperar resultados
+
 /**
  * String nombre=getIntent().getStringExtra("nombre");
  *         //Toast.makeText(this,"Hola"+nombre,Toast.LENGTH_LONG);
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
  */
 
         // RECIBIR DATOS DE LA PANTALA SECUNDARIA
-
+        startActivityForResult(i,1); //para abir la ventaba ESPARANDO LAS RESPUESTADESDE LAS SECUNDARIA
 
     }
 
