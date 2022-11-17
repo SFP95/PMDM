@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import org.niferp.primero.domain.Persona;
+
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -32,8 +35,11 @@ public class MainActivity extends AppCompatActivity {
         EditText et=findViewById(R.id.idNombre);
         String nombre=et.getText().toString().equals("")? et.getText().toString():"JOHN DOE";
         i.putExtra("nombre" ,nombre); //llevar texto extra al intent ala segunda ventana
-        int dato=18;
-        i.putExtra("edad",dato);
+
+        int edad=(int)((Math.random()*50)+1);
+
+        Persona persona=new Persona(nombre,edad);
+        i.putExtra("persona",persona);
         startActivity(i);
 /**
  * String nombre=getIntent().getStringExtra("nombre");

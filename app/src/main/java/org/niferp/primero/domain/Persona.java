@@ -1,8 +1,13 @@
 package org.niferp.primero.domain;
 
-public class Persona {
+import java.io.Serializable;
+
+public class Persona implements Serializable {
     private String nombre;
     private int edad;
+
+    public Persona(String nombre, int edad) {
+    }
 
     public String getNombre() {
         return nombre;
