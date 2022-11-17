@@ -19,8 +19,12 @@ public class SecundaryActivity extends AppCompatActivity{
         String nombre= getIntent().getStringExtra("nombre");
         TextView tv = (TextView) findViewById(R.id.textoEscoge);
         tv.setText("Hola "+ nombre);
+
+        int edad=getIntent().getIntExtra("Edad", -1);
+
+        Toast.makeText(this,"Hola"+ nombre+ "tu edad es de "+(edad+2),Toast.LENGTH_LONG).show();
+
     }
     //5.2 La vista esta en el activity_main2
-
 
 }

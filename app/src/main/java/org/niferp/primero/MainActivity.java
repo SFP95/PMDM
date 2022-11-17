@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent (this,SecundaryActivity.class);
         EditText et=findViewById(R.id.idNombre);
         String nombre=et.getText().toString().equals("")? et.getText().toString():"JOHN DOE";
-        i.putExtra("nombre" ,nombre);
+        i.putExtra("nombre" ,nombre); //llevar texto extra al intent ala segunda ventana
         int dato=18;
         i.putExtra("edad",dato);
         startActivity(i);
