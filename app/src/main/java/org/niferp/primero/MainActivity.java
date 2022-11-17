@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
         //5.1
         Intent i = new Intent (this,SecundaryActivity.class);
         EditText et=findViewById(R.id.idNombre);
-        String nombre=et.getText().toString().equals("")? et.getText().toString():"JOHN DOE";
-        i.putExtra("nombre" ,nombre); //llevar texto extra al intent ala segunda ventana
+        String nombre=!et.getText().toString().equals("")? et.getText().toString():"Nia";
+       // i.putExtra("nombre" ,nombre); //llevar texto extra al intent ala segunda ventana
 
         int edad=(int)((Math.random()*50)+1);
-
+        System.out.println(edad);
         Persona persona=new Persona(nombre,edad);
         i.putExtra("persona",persona);
         startActivity(i);

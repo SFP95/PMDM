@@ -7,6 +7,8 @@ public class Persona implements Serializable {
     private int edad;
 
     public Persona(String nombre, int edad) {
+        this.nombre=nombre;
+        this.edad=edad;
     }
 
     public String getNombre() {
@@ -25,4 +27,11 @@ public class Persona implements Serializable {
         this.edad = edad;
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                '}';
+    }
 }
