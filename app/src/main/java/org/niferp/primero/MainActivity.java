@@ -21,9 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void pulsar(View view){
-        //Forma de arrancar la ventana seucndaria 5.0
-        //startActivity(new Intent (this,SecundaryActivity.class));
-        //Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
+        /**
+         * Forma de arrancar la ventana seucndaria 5.0
+        *startActivity(new Intent (this,SecundaryActivity.class));
+        *Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
+        */
 
         //5.1
         Intent i = new Intent (this,SecundaryActivity.class);
