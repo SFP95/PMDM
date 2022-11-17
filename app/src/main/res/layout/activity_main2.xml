@@ -13,44 +13,107 @@
         android:layout_height="wrap_content"
         android:text="Escoge tu pelicula favorita"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.47" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="262dp"
-        android:layout_height="320dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textoEscoge">
+        android:layout_width="302dp"
+        android:layout_height="228dp"
+        app:layout_constraintBottom_toTopOf="@+id/gBottom"
+        app:layout_constraintEnd_toStartOf="@+id/gDer"
+        app:layout_constraintStart_toStartOf="@+id/gIzq"
+        app:layout_constraintTop_toTopOf="@+id/gTop">
 
         <RadioButton
             android:id="@+id/rb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="2001: La odisea del espacio" />
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="5d"
+            android:marqueeRepeatLimit="15"
+            android:text="2001: La odisea del espacio"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="El Señor de los Anillos" />
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="5d"
+            android:marqueeRepeatLimit="15"
+            android:text="El Señor de los Anillos"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="La lista de Schindler" />
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="5d"
+            android:marqueeRepeatLimit="15"
+            android:text="La lista de Schindler"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rb4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Forrest Gump" />
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="5d"
+            android:marqueeRepeatLimit="15"
+            android:text="Forrest Gump"
+            android:textSize="20sp" />
+
     </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAlabar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alabar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gBottom"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gIzq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="52dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gDer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="354dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="221dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="451dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
