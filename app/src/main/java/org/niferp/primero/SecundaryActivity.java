@@ -23,6 +23,8 @@ public class SecundaryActivity extends AppCompatActivity{
         //tv.setText("Hola "+ nombre);
         tv.setText("Hola "+ persona);
 
+
+
         //int edad=getIntent().getIntExtra("Edad", -1);
 
         //Toast.makeText(this,"Hola"+ nombre+ "! \n tu edad es de "+(edad+2),Toast.LENGTH_LONG).show();
