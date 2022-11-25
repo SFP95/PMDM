@@ -1,4 +1,4 @@
-package org.niferp.primero;
+package T5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.niferp.primero.R;
 
 public class MainActiviti2 extends AppCompatActivity {
     private Button b;

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#705773"
-    tools:context=".SecundaryActivity">
+    tools:context="T5.SecundaryActivity">
 
     <TextView
         android:id="@+id/textoEscoge"

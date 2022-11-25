@@ -1,4 +1,4 @@
-package org.niferp.primero;
+package T5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.niferp.primero.R;
 import org.niferp.primero.domain.Persona;
 
 public class SecundaryActivity extends AppCompatActivity{

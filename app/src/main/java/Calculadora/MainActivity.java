@@ -1,8 +1,4 @@
-package org.niferp.primero;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
+package Calculadora;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +6,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import T5.SecundaryActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import org.niferp.primero.R;
 import org.niferp.primero.domain.Persona;
+
+import T5.SecundaryActivity;
 
 
 public class MainActivity extends AppCompatActivity {
