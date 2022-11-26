@@ -14,10 +14,17 @@
         android:theme="@style/Theme.Primero"
         tools:targetApi="31">
         <activity
-            android:name="T5.SecundaryActivity"
+            android:name=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="srcOld.T4.T5.SecundaryActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="srcOld.T4.primero.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

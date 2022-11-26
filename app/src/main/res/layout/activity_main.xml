@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#705773"
-    tools:context="T5.SecundaryActivity">
+    tools:context="srcOld.T4.T5.SecundaryActivity">
 
     <Button
         android:id="@+id/button2"

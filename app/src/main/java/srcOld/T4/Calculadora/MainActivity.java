@@ -1,8 +1,4 @@
-package org.niferp.primero;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
+package srcOld.T4.Calculadora;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +6,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import T5.SecundaryActivity;
-import org.niferp.primero.domain.Persona;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import org.niferp.primero.R;
+import srcOld.T4.primero.domain.Persona;
+
+//import srcOld.T4.T5.SecundaryActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 * startActivity(new Intent (this,SecundaryActivity.class));
 * Toast.makeText(this,"SORPRESA",Toast.LENGTH_SHORT).show();
 */
-
+/*
         //5.1
         Intent i = new Intent (this, SecundaryActivity.class);
         EditText et=findViewById(R.id.idNombre);
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
  *         EditText tv = (EditText) findViewById( R.id.textoEscoge);
  *         tv.setText("Hola" + nombre);
  */
-
+/*
         // RECIBIR DATOS DE LA PANTALA SECUNDARIA
 
         i.putExtra("mensaje",((TextView)(findViewById( R.id.textoEscoge))).getText().toString());
@@ -64,4 +65,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-}
+}*/}}

@@ -1,4 +1,4 @@
-package org.niferp.primero.domain;
+package srcOld.T4.primero.domain;
 
 import java.io.Serializable;
 
