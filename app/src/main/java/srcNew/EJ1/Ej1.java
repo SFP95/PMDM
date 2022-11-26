@@ -1,10 +1,10 @@
 package srcNew.EJ1;
-import javax.swing.*;
+/*
 import java.awt.event.*;
 
 import srcNew.EJ1.Clases.Consumidor;
 import srcNew.EJ1.Clases.Productor;
-import javax.swing.*;
+import javax.swing.*;*/
 /*
 public class Ej1 extends JFrame {
     static String mensaje="Numero de veces que se ha pulsado: ";

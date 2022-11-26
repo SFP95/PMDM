@@ -30,7 +30,7 @@ public class MainActiviti2 extends AppCompatActivity {
 
 
 
-            Log.i("CV","OnCreate()");
+            Log.i("CV","OnEvento()");
 
 
             ViewGroup vg = new LinearLayout(this);

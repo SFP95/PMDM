@@ -4,7 +4,7 @@ import srcNew.EJ1.Clases.Consumidor;
 import srcNew.EJ1.Clases.Productor;
 
 public class Ej1_1 {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         //Ej1
 
         Consumidor c1=new Consumidor("Pepe","ComiCon");
@@ -13,5 +13,5 @@ public class Ej1_1 {
         System.out.println(c1.GenerarEvento());
         System.out.println(c2.GenerarEvento());
         System.out.println(c2.GenerarEvento());
-    }
+    }*/
 }
