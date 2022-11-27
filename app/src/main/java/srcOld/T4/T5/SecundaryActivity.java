@@ -1,5 +1,5 @@
 package srcOld.T4.T5;
-/*
+/
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -22,18 +22,18 @@ public class SecundaryActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main2);
         mostrarMensaje();
         contestar();
-//        Persona persona=(Persona)getIntent().getSerializableExtra("persona");
-//        //String nombre= getIntent().getStringExtra("nombre");
-//        TextView tv = (TextView) findViewById(R.id.textoEscoge);
-//        //tv.setText("Hola "+ nombre);
-//        tv.setText("Hola "+ persona.getNombre()+" - Edad: "+ persona.getEdad());
-//
-//
-//
-//        //int edad=getIntent().getIntExtra("Edad", -1);
-//
-//        //Toast.makeText(this,"Hola"+ nombre+ "! \n tu edad es de "+(edad+2),Toast.LENGTH_LONG).show();
-//        Toast.makeText(this,"Hola "+ persona.getNombre() + "! \n tu edad es de "+(persona.getEdad()+2),Toast.LENGTH_LONG).show();
+        Persona persona=(Persona)getIntent().getSerializableExtra("persona");
+        String nombre= getIntent().getStringExtra("nombre");
+        TextView tv = (TextView) findViewById(R.id.textoEscoge);
+        tv.setText("Hola "+ nombre);
+        tv.setText("Hola "+ persona.getNombre()+" - Edad: "+ persona.getEdad());
+
+
+
+       int edad=getIntent().getIntExtra("Edad", -1);
+
+       Toast.makeText(this,"Hola"+ nombre+ "! \n tu edad es de "+(edad+2),Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Hola "+ persona.getNombre() + "! \n tu edad es de "+(persona.getEdad()+2),Toast.LENGTH_LONG).show();
 
 
 
