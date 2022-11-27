@@ -1,7 +1,5 @@
-package srcNew.Ej3;
-
+package com.example.mispruebaspmdm;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,92 +8,63 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.niferp.primero.R;
-
 public class MainActivity extends AppCompatActivity {
-    private Button b;
-    private Button b2;
-    private TextView tv;
+    private Button b;  //reset
+    private Button b2; //pulsar
+    private TextView tv; //mensaje
     private int x;
-    private String mensaje = "Pulsado " + this.x + " veces";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
-        Log.i("CV","OnCreate()"); //???
+        setContentView(R.layout.activity_main);
+        //Log.i("CV","OnCreate()"); //Inicio ciclo e vida
 
-        ViewGroup vg = new LinearLayout(this);
+       // ViewGroup vg = new LinearLayout(this);
 
-        this.x=0;
-        this.tv=new TextView(this);
-        tv.setText("MENSAJE");
-        this.b =new Button(this);
-        b.setText("PULSA");
-        this.b2=new Button(this);
-        b2.setText("RESET");
+        x=0;
+
+        tv=(TextView) findViewById(R.id.mensaje);
+        b = (Button) findViewById(R.id.boton);
+        b2=(Button) findViewById(R.id.reset);
 
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                pulsar(view);
+            public void onClick(View view) {pulsar(view);
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                accionReset(view);
+            public void onClick(View view) { accionReset(view);
             }
         });
-        vg.addView(b);
-        vg.addView(tv);
-        vg.addView(b2);
 
         //Paso Hilo de Vida
-        onStarted();
+       /* onStarted();
         onResumed();
         onPaused();
         onStopped();
-        onDesrtoy();
+        onDesrtoy();*/
     }
 
-    /*private  void accion(){
-        b.setText("PULSADO");
-        this.x++;
-        tv.setText("Pulsado "+this.x+" veces");
-
-        if(this.x==5){
-            this.b.setEnabled(true); //cuando pulsas 5 veces el boton de deshabilita
-        }
-
-    }
-
-    private void accionReset(View view) {
-        boolean boton=this.b.isEnabled();
-        if(boton==false){
-            this.b.setEnabled(true);
-            this.x=0;
-            tv.setText("Pulsado " + this.x + " veces");
-        }
-    }*/
 
     public void pulsar(View view) {
-        //b.setText("PULSADO");
-        this.x++;
-        tv.setText("Pulsado "+this.x+" veces");
+        b.setText("PULSADO");
+        x++;
+        tv.setText("Pulsado "+x+" veces");
 
-        if(this.x==5){
-            this.b.setEnabled(true); //cuando pulsas 5 veces el boton de deshabilita
+        if(x==5){
+           b.setEnabled(false); //cuando pulsas 5 veces el boton de deshabilita
         }
     }
 
     public void accionReset(View view) {
-        boolean boton=this.b.isEnabled();
-        if(boton==false){
-            this.b.setEnabled(true);
-            this.x=0;
-            tv.setText("Pulsado " + this.x + " veces");
+        boolean boton=b.isEnabled();
+        if(boton==false ){
+            b.setEnabled(true);
+            x=0;
+            tv.setText("Pulsado " + x + " veces");
         }
     }
 
