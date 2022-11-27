@@ -86,8 +86,9 @@ public class SecundaryActivity extends AppCompatActivity {
                 mensaje,
                 duracion);
         toast.show();
-
-        Toast.makeText(	getApplicationContext(), mensaje,Toast.LENGTH_SHORT).show();
+        
+        //Queda meter que salude con el nombre de la primera ventana
+        //Toast.makeText(	getApplicationContext(), mensaje,Toast.LENGTH_SHORT).show();
 
     }
 }
