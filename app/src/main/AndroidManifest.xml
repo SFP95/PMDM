@@ -14,17 +14,17 @@
         android:theme="@style/Theme.Primero"
         tools:targetApi="31">
         <activity
-            android:name=".Secundary"
-            android:exported="false">
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Primero.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Primero.NoActionBar">
+            android:name=".Secundary"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
