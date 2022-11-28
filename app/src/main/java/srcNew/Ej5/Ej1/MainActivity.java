@@ -12,5 +12,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(org.niferp.primero.R.layout.activity_main7);
+        Persona persona = (Persona)(getIntent().getSerializableExtra("persona"));
+
+        TextView tv = (TextView)findViewById(R.id.banner);
+        tv.setText("HOLA "+persona.getNombre());
     }
 }
