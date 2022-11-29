@@ -10,7 +10,7 @@ public class EjSplit {
     private static void dividir() {
         String[] palabra= text.split("-");
         for(int i =0;i<palabra.length;i++){
-            System.out.println(i);
+            System.out.println(i+" "+ palabra[i]);
         }
 
     }
