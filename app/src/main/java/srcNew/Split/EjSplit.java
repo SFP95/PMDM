@@ -8,6 +8,10 @@ public class EjSplit {
     }
 
     private static void dividir() {
-        System.out.println(text.split("-"));
+        String[] palabra= text.split("-");
+        for(int i =0;i<palabra.length;i++){
+            System.out.println(i);
+        }
+
     }
 }
