@@ -9,6 +9,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+
     private Button b;  //reset
     private Button b2; //pulsar
     private TextView tv; //mensaje
@@ -19,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Log.i("CV","OnCreate()"); //Inicio ciclo e vida
-
        // ViewGroup vg = new LinearLayout(this);
 
         x=0;

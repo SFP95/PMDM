@@ -17,28 +17,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main9);
     }
     public void caso1(View v) {
-        Intent i = new Intent();
+        Intent i = new Intent(); //app de batería
         i.setAction(Intent.ACTION_POWER_USAGE_SUMMARY);
         startActivity(i);
     }
 
     public void caso2a(View v) {
         Intent i = new Intent();
-        i.setAction(Intent.ACTION_VIEW);
+        i.setAction(Intent.ACTION_VIEW); //app amazon
         i.setData(Uri.parse("http://www.amazon.com"));
         startActivity(i);
     }
 
     public void caso2b(View v) {
         Intent i = new Intent();
-        i.setAction(Intent.ACTION_VIEW);
+        i.setAction(Intent.ACTION_VIEW); //manda menasaje con sms
         i.setData(Uri.parse("sms:555443"));
         startActivity(i);
     }
 
     public void caso3(View v) {
         Intent i = new Intent();
-        i.setAction(Intent.ACTION_VIEW);
+        i.setAction(Intent.ACTION_VIEW); // otra forma de sms
 
         i.setType("vnd.android-dir/mms-sms");
         i.putExtra("address", "5554433");

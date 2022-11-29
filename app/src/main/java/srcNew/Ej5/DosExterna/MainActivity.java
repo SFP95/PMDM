@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main11);
+        //paquete externa conectado al main de internas
     }
     public void cerrar(View v) {
         finish();

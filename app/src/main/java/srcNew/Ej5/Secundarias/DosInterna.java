@@ -14,7 +14,7 @@ public class DosInterna extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secundary4);
     }
-
+//te redirige a otra clase externa
     public void cerrar(View v) {
         finish();
     }

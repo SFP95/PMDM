@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lanzarDosExterna(View v) {
-        Intent i = new Intent();
+        Intent i = new Intent(); // muesta la pantalla creado en un paquete fuera de el paquete de este main
         i.setClassName(
                 "org.agaray.pmdm.t5.ejemplos.secundarias.dosexterna",
                 "org.agaray.pmdm.t5.ejemplos.secundarias.dosexterna.MainActivity");
